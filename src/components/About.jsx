@@ -14,7 +14,7 @@ const container = (delay) => ({
 export const About = () => {
     return (
         <div id="apropos" className="border-b border-neutral-900 pb-4">
-            <h1 className="my-20 text-center text-4xl text-white">
+            <h1 className="my-8 text-center text-4xl text-white">
                 A <span className="text-neutral-500">propos</span>
             </h1>
 

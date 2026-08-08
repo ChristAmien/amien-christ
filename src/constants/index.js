@@ -162,3 +162,58 @@ export const CONTACT = {
     phoneNo: "+225 0706528067 ",
     email: "amienfabien@gmail.com",
 };
+
+export const FOOTER_CONTENT = {
+    brandName: "AMIEN",
+    tagline: "Développeur Full Stack | Passion pour l'innovation digitale",
+    email: "amienfabien@gmail.com",
+    phone: "+225 0706528067",
+    address: "Bingerville, Abidjan, Côte d'Ivoire",
+    
+    footerLinks: {
+        Products: [
+            { label: "Portfolio", href: "#" },
+            { label: "Projets", href: "#projects" },
+            { label: "Technologies", href: "#technologies" },
+            { label: "Certifications", href: "#certifications" },
+        ],
+        Learn: [
+            { label: "À propos", href: "#about" },
+            { label: "Expériences", href: "#experiences" },
+            { label: "Blog", href: "https://blog-amien.vercel.app/" },
+            { label: "Ressources", href: "#" },
+        ],
+        Company: [
+            { label: "Nous contacter", href: "#contact" },
+            { label: "GitHub", href: "https://github.com/ChristAmien" },
+            { label: "LinkedIn", href: "https://linkedin.com/in/amien-christ" },
+            { label: "Mentions légales", href: "#" },
+        ],
+    },
+    
+    socialLinks: [
+        {
+            icon: "FaTwitter",
+            href: "https://twitter.com/amien_dev",
+            label: "Twitter",
+        },
+        {
+            icon: "FaGithub",
+            href: "https://github.com/ChristAmien",
+            label: "GitHub",
+        },
+        {
+            icon: "FaLinkedin",
+            href: "https://linkedin.com/in/amien-christ",
+            label: "LinkedIn",
+        },
+        {
+            icon: "FaEnvelope",
+            href: "mailto:amienfabien@gmail.com",
+            label: "Email",
+        },
+    ],
+    
+    copyrightText: "Amien Christ. Tous droits réservés.",
+    footerMessage: "Passion pour l'innovation technologique ",
+};
