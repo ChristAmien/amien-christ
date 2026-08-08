@@ -1,3 +1,5 @@
+//renomage de StarRating
+
 import { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { supabase } from '../supabaseClient';
