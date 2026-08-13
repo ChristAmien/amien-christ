@@ -30,7 +30,7 @@ export default function Projects() {
     const x = useTransform(scrollYProgress, [0, 1], [0, -distance]);
 
     return (
-        <section id="projects" className="bg-slate-950 md:overflow-x-clip">
+        <section id="projets" className="bg-slate-950 md:overflow-x-clip">
             {/* Barre de progression du scroll horizontal */}
             <motion.div
                 className="fixed inset-x-0 top-0 z-40 hidden h-0.5 origin-left bg-white md:block"
