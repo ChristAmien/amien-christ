@@ -1,0 +1,189 @@
+#projects {
+    height: auto;
+    overflow: visible;
+    background: var(--background, #0a0a0a);
+}
+
+.intro-section {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--hue-1, #7dd3fc);
+    font-family: "Geist Mono", monospace;
+    margin-bottom: 12px;
+}
+
+.intro-section h2.impact {
+    font-size: clamp(32px, 7vw, 56px);
+    color: var(--white, #fff);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin-top: 16px;
+    max-width: 480px;
+    color: var(--gray, #9ca3af);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.scroll-container {
+    height: 300vh;
+    position: relative;
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 420px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.gallery {
+    display: flex;
+    gap: 30px;
+    will-change: transform;
+}
+
+.gallery-item {
+    flex-shrink: 0;
+    width: 420px;
+    height: 520px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    background-image: var(--item-image);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 35%,
+        var(--item-color)
+    );
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+.item-content {
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    right: 28px;
+    z-index: 1;
+}
+
+.item-number {
+    font-size: 13px;
+    color: var(--item-color);
+    font-family: "Geist Mono", monospace;
+    display: block;
+    margin-bottom: 8px;
+    filter: brightness(1.8);
+}
+
+.gallery-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white, #fff);
+    margin: 0 0 8px 0;
+}
+
+.item-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0 0 14px 0;
+}
+
+.item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    color: var(--white, #fff);
+    font-family: "Geist Mono", monospace;
+}
+
+.item-links {
+    display: flex;
+    gap: 16px;
+}
+
+.item-links a {
+    font-size: 13px;
+    color: var(--white, #fff);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.item-links a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    .sticky-wrapper {
+        width: 300px;
+    }
+
+    .gallery {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        width: 300px;
+        height: 420px;
+    }
+
+    .gallery-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery {
+        transform: none !important;
+    }
+    .scroll-container {
+        height: auto;
+    }
+    .sticky-wrapper {
+        position: relative;
+        height: auto;
+        width: 100%;
+        overflow-x: auto;
+        padding: 50px 0;
+    }
+}

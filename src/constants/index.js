@@ -35,28 +35,28 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
     {
-        title: "Site E-Restaurant",
+        title: "Dinevoria",
         image: project1,
         description:
-            "Dinevoria est une plateforme de restauration en ligne qui permet aux utilisateurs de consulter le menu d'un restaurant, de découvrir les plats proposés et de commander facilement grâce à une interface moderne, rapide et intuitive.",
+            "Plateforme de restauration en ligne pensée pour offrir une navigation fluide, un parcours commande clair et une expérience visuelle premium. Le projet met en avant l'UX, la structure de contenu et la fluidité de l'interaction sur mobile et desktop.",
         technologies: ["REACT", "TAILWINDCSS", "FRAMER"],
         demoUrl: "https://dinevoria.vercel.app/",
         sourceUrl: "https://github.com/ChristAmien/Dinevoria",
     },
     {
-        title: "Application de Gestion de Tâches",
+        title: "TaskFlow",
         image: project2,
         description:
-            "Application web conçue pour organiser et suivre les tâches et projets, avec des fonctionnalités de création, d'attribution et de suivi de l'avancement.",
+            "Application de gestion de tâches conçue pour organiser le travail en équipe, suivre l'avancement des projets et centraliser les actions de manière claire, rapide et intuitive.",
         technologies: ["HTML", "CSS", "Angular", "Firebase"],
         demoUrl: "#",
         sourceUrl: "#",
     },
     {
-        title: "Plateforme de E-learning",
+        title: "SkillPath",
         image: project4,
         description:
-            "SkillPath est une plateforme d'e-learning qui propose des parcours de formation structurés, des cours de qualité et des outils de suivi de progression pour aider chacun à développer ses compétences et atteindre ses objectifs d'apprentissage efficacement.",
+            "Plateforme d'e-learning tournée vers la progression des apprenants, avec une architecture de parcours claire, des contenus structurés et une interface pensée pour favoriser la concentration et l'engagement.",
         technologies: ["REACT", "TAILWINDCSS"],
         demoUrl: "https://skillpath-lac-eta.vercel.app/",
         sourceUrl: "https://github.com/ChristAmien/Skillpath",
@@ -65,7 +65,7 @@ export const PROJECTS = [
         title: "Am'Coffee",
         image: project5,
         description:
-            "Site vitrine moderne dédié à un café, mettant en valeur les boissons, les spécialités de la maison, les promotions et les informations essentielles, tout en offrant une expérience utilisateur conviviale et immersive.",
+            "Site vitrine moderne pour un café, avec une identité visuelle premium, des sections de mise en avant des produits et une expérience immersive pensée pour renforcer la marque et la conversion.",
         technologies: ["HTML", "CSS", "JAVASCRIPT"],
         demoUrl: "https://christamien.github.io/AM-Coofee/",
         sourceUrl: "https://github.com/ChristAmien/AM-Coofee",
@@ -74,7 +74,7 @@ export const PROJECTS = [
         title: "Portfolio AMIEN",
         image: project6,
         description:
-            "Un portfolio moderne présentant mes projets en développement web, mobile et intelligence artificielle. J'y partage des solutions performantes, des interfaces soignées et des applications conçues pour répondre à des besoins concrets tout en offrant une expérience utilisateur fluide.",
+            "Portfolio personnel conçu pour présenter mes compétences, mes réalisations et mon approche de développement avec une esthétique minimaliste, une navigation immersive et un rendu premium.",
         technologies: ["REACT", "TAILWINDCSS", "JAVASCRIPT", "FRAMER"],
         demoUrl: "https://portfolio-amien-christ.vercel.app/",
         sourceUrl: "https://github.com/ChristAmien/Portfolio-Amien-Christ",
