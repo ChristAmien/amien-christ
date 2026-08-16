@@ -217,3 +217,24 @@ export const FOOTER_CONTENT = {
     copyrightText: "Amien Christ. Tous droits réservés.",
     footerMessage: "Passion pour l'innovation technologique ",
 };
+
+const DEVICON_BASE = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
+
+export const technologies = [
+    { name: "React", icon: `${DEVICON_BASE}/react/react-original.svg` },
+    { name: "Java", icon: `${DEVICON_BASE}/java/java-original.svg` },
+    { name: "Python", icon: `${DEVICON_BASE}/python/python-original.svg` },
+    { name: "Spring Boot", icon: `${DEVICON_BASE}/spring/spring-original.svg` },
+    { name: "MySQL", icon: `${DEVICON_BASE}/mysql/mysql-original.svg` },
+    { name: "PostgreSQL", icon: `${DEVICON_BASE}/postgresql/postgresql-original.svg` },
+    { name: "Git", icon: `${DEVICON_BASE}/git/git-original.svg` },
+    { name: "GitHub", icon: `${DEVICON_BASE}/github/github-original.svg`, badge: "bg-white" },
+    { name: "Tailwind CSS", icon: `${DEVICON_BASE}/tailwindcss/tailwindcss-original.svg` },
+    { name: "Docker", icon: `${DEVICON_BASE}/docker/docker-original.svg` },
+    { name: "Flask", icon: `${DEVICON_BASE}/flask/flask-original.svg`, badge: "bg-neutral-200" },
+    { name: "HTML", icon: `${DEVICON_BASE}/html5/html5-original.svg` },
+    { name: "CSS", icon: `${DEVICON_BASE}/css3/css3-original.svg` },
+    { name: "JavaScript", icon: `${DEVICON_BASE}/javascript/javascript-original.svg` },
+    { name: "Flutter", icon: `${DEVICON_BASE}/flutter/flutter-original.svg` },
+    { name: "Supabase", icon: `${DEVICON_BASE}/supabase/supabase-original.svg` },
+]

@@ -1,37 +1,25 @@
-import { FaDocker, FaPython, FaCss3, FaGithub, FaGitAlt, FaJava, FaHtml5 } from "react-icons/fa"
-import { SiFlask, SiSupabase, SiFlutter, SiSpringboot, SiMysql, SiPostgresql, SiTailwindcss, SiJavascript } from "react-icons/si"
-import { RiReactjsLine } from "react-icons/ri"
 import OrbitImages from './OrbitImages'
 import BlobCursor from './BlobCursor'
+import { technologies } from '../constants'
 
-const technologies = [
-    { name: "React", icon: RiReactjsLine, color: "text-cyan-400" },
-    { name: "Java", icon: FaJava, color: "text-red-500" },
-    { name: "Python", icon: FaPython, color: "text-yellow-500" },
-    { name: "Spring Boot", icon: SiSpringboot, color: "text-green-500" },
-    { name: "MySQL", icon: SiMysql, color: "text-cyan-500" },
-    { name: "PostgreSQL", icon: SiPostgresql, color: "text-sky-700" },
-    { name: "Git", icon: FaGitAlt, color: "text-orange-500" },
-    { name: "GitHub", icon: FaGithub, color: "text-white" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
-    { name: "Docker", icon: FaDocker, color: "text-blue-400" },
-    { name: "Flask", icon: SiFlask, color: "text-gray-300" },
-    { name: "HTML", icon: FaHtml5, color: "text-orange-800" },
-    { name: "CSS", icon: FaCss3, color: "text-purple-800" },
-    { name: "JavaScript", icon: SiJavascript, color: "text-yellow-300" },
-    { name: "Flutter", icon: SiFlutter, color: "text-cyan-400" },
-    { name: "Supabase", icon: SiSupabase, color: "text-green-400" },
-]
-
-const orbitItems = technologies.map(({ name, icon: Icon, color }) => (
+const TechIcon = ({ name, icon, badge }) => (
     <div
-        key={name}
         title={name}
         className="flex h-full w-full flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-900/80 p-2 shadow-lg shadow-black/20"
     >
-        <Icon className={`text-5xl ${color}`} />
+        {badge ? (
+            <div className={`flex items-center justify-center rounded-full p-2.5 ${badge}`}>
+                <img src={icon} alt={name} className="h-8 w-8 object-contain" />
+            </div>
+        ) : (
+            <img src={icon} alt={name} className="h-12 w-12 object-contain" />
+        )}
         <span className="mt-1 truncate text-xs font-medium text-neutral-300">{name}</span>
     </div>
+)
+
+const orbitItems = technologies.map((tech) => (
+    <TechIcon key={tech.name} {...tech} />
 ))
 
 export const Technologies = () => {
@@ -100,13 +88,19 @@ export const Technologies = () => {
                     Competences
                 </h2>
                 <div className="flex flex-wrap items-center justify-center gap-4 px-4">
-                    {technologies.map(({ name, icon: Icon, color }) => (
+                    {technologies.map((tech) => (
                         <div
-                            key={name}
+                            key={tech.name}
                             className="flex min-w-[140px] flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-900/70 p-4 shadow-lg shadow-black/20"
                         >
-                            <Icon className={`text-6xl ${color}`} />
-                            <span className="mt-3 text-sm font-medium text-neutral-200">{name}</span>
+                            {tech.badge ? (
+                                <div className={`flex items-center justify-center rounded-full p-3 ${tech.badge}`}>
+                                    <img src={tech.icon} alt={tech.name} className="h-9 w-9 object-contain" />
+                                </div>
+                            ) : (
+                                <img src={tech.icon} alt={tech.name} className="h-14 w-14 object-contain" />
+                            )}
+                            <span className="mt-3 text-sm font-medium text-neutral-200">{tech.name}</span>
                         </div>
                     ))}
                 </div>
