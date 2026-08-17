@@ -14,7 +14,7 @@ const NAV_LINKS = [
     { label: 'Contacts', href: '#contacts' },
 ]
 
-// Chemin du CV : servi depuis /public/documents/, donc accessible via /documents/... (jamais "public/" dans le chemin)
+// Chemin du CV 
 const CV_PATH = '/documents/CV-Christ-Amien.pdf'
 
 export function Navbar() {
