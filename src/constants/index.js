@@ -238,3 +238,13 @@ export const technologies = [
     { name: "Flutter", icon: `${DEVICON_BASE}/flutter/flutter-original.svg` },
     { name: "Supabase", icon: `${DEVICON_BASE}/supabase/supabase-original.svg` },
 ]
+
+export const NAV_LINKS = [
+    { label: 'Acceuil', href: '#acceuil' },
+    { label: 'A propos', href: '#apropos' },
+    { label: 'Projets', href: '#projets' },
+    { label: 'Competences', href: '#competences' },
+    { label: 'Certifications', href: '#certifications' },
+    { label: 'Experiences', href: '#experiences' },
+    { label: 'Contacts', href: '#contacts' },
+]

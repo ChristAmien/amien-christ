@@ -5,16 +5,8 @@ import { FaBars, FaDownload } from 'react-icons/fa'
 import { useHideOnScroll } from '../hooks/useHideOnScroll'
 import { SocialLinks } from './SocialLinks'
 import { MobileMenu } from './MobileMenu'
+import { NAV_LINKS } from '../constants';
 
-const NAV_LINKS = [
-    { label: 'Acceuil', href: '#acceuil' },
-    { label: 'A propos', href: '#apropos' },
-    { label: 'Projets', href: '#projets' },
-    { label: 'Competences', href: '#competences' },
-    { label: 'Certifications', href: '#certifications' },
-    { label: 'Experiences', href: '#experiences' },
-    { label: 'Contacts', href: '#contacts' },
-]
 
 // Chemin du CV 
 const CV_PATH = '/documents/CV-Christ-Amien.pdf'
