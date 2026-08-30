@@ -102,6 +102,12 @@ export const CERTIFICATIONS = [
         file: "/certificates/Coursera LU6MGU6FJB48.pdf", // espace encodé en %20
     },
     {
+        title: "Programming with JAVA",
+        issuer: "Coursera and Amazon",
+        date: "2026",
+        file: "/certificates/Coursera V6B15G4T9ZI7.pdf", // espace encodé en %20
+    },
+    {
         title: "IA Générative",
         issuer: "MTN Skills Academy",
         date: "2026",
