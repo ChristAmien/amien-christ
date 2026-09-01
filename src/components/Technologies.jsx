@@ -2,17 +2,27 @@ import OrbitImages from './OrbitImages'
 import BlobCursor from './BlobCursor'
 import { technologies } from '../constants'
 
-const TechIcon = ({ name, icon, badge }) => (
+const TechIcon = ({ name, icon, badge, color }) => (
     <div
         title={name}
         className="flex h-full w-full flex-col items-center justify-center rounded-2xl border border-neutral-700 bg-neutral-900/80 p-2 shadow-lg shadow-black/20"
     >
         {badge ? (
             <div className={`flex items-center justify-center rounded-full p-2.5 ${badge}`}>
-                <img src={icon} alt={name} className="h-8 w-8 object-contain" />
+                <img
+                    src={icon}
+                    alt={name}
+                    className="h-8 w-8 object-contain"
+                    style={color === 'green' ? { filter: 'brightness(0) saturate(100%) invert(56%) sepia(74%) saturate(700%) hue-rotate(112deg) brightness(105%) contrast(110%)' } : undefined}
+                />
             </div>
         ) : (
-            <img src={icon} alt={name} className="h-12 w-12 object-contain" />
+            <img
+                src={icon}
+                alt={name}
+                className="h-12 w-12 object-contain"
+                style={color === 'green' ? { filter: 'brightness(0) saturate(100%) invert(56%) sepia(74%) saturate(700%) hue-rotate(112deg) brightness(105%) contrast(110%)' } : undefined}
+            />
         )}
         <span className="mt-1 truncate text-xs font-medium text-neutral-300">{name}</span>
     </div>

@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/Coffee.png"
 import project6 from "../assets/projects/project-6.jpg"
+import { color } from "framer-motion";
 
 export const HERO_CONTENT = `Développeur Full Stack passionné par la conception d’applications web modernes et performantes. Je travaille principalement avec Java, Spring Boot, React et JavaScript, avec un intérêt particulier pour le développement backend, les API REST et les solutions digitales dans le secteur bancaire.`;
 
@@ -243,6 +244,7 @@ export const technologies = [
     { name: "JavaScript", icon: `${DEVICON_BASE}/javascript/javascript-original.svg` },
     { name: "Flutter", icon: `${DEVICON_BASE}/flutter/flutter-original.svg` },
     { name: "Supabase", icon: `${DEVICON_BASE}/supabase/supabase-original.svg` },
+    { name: "Neon", icon: "https://simpleicons.org/icons/neon.svg", color: "green" },
 ]
 
 export const NAV_LINKS = [
