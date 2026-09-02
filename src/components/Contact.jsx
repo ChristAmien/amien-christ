@@ -9,6 +9,7 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const BUDGETS = ["< 500K F", "500K - 1M", "1M - 2M", "2M - 5M", "+ 5M"];
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
 // Animation de vol au repos (boucle infinie)
 const IDLE_ANIMATION = {
@@ -62,6 +63,15 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const formData = new FormData(formRef.current);
+        const emailValue = String(formData.get("email") || "").trim();
+
+        if (!EMAIL_REGEX.test(emailValue)) {
+            setStatus("error");
+            return;
+        }
+
         setStatus("sending");
 
         emailjs
@@ -199,6 +209,8 @@ const Contact = () => {
                                 name="email"
                                 type="email"
                                 required
+                                pattern={EMAIL_REGEX.source}
+                                title="Entrez une adresse email valide"
                                 placeholder="vous@exemple.com"
                                 className="w-full rounded-md border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 outline-none transition focus:border-purple-500"
                             />
