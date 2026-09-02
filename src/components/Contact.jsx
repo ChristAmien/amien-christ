@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { CONTACT } from "../constants";
 
@@ -123,7 +124,22 @@ const Contact = () => {
 
                         <div className="mt-8 flex flex-col gap-5">
                             <div className="flex items-center gap-4">
-                                <span className="h-2.5 w-2.5 rounded-full bg-purple-400" />
+                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
+                                    <MessageCircle className="h-4 w-4" />
+                                </div>
+                                <a
+                                    href={`https://wa.me/${CONTACT.phoneNo.replace(/\s/g, "")}`}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-neutral-200 hover:text-emerald-400"
+                                >
+                                    {CONTACT.phoneNo}
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-500/15 text-purple-400">
+                                    <Mail className="h-4 w-4" />
+                                </div>
                                 <a
                                     href={`mailto:${CONTACT.email}`}
                                     className="text-neutral-200 hover:text-purple-400"
@@ -132,16 +148,9 @@ const Contact = () => {
                                 </a>
                             </div>
                             <div className="flex items-center gap-4">
-                                <span className="h-2.5 w-2.5 rounded-full bg-purple-400" />
-                                <a
-                                    href={`tel:${CONTACT.phoneNo.replace(/\s/g, "")}`}
-                                    className="text-neutral-200 hover:text-purple-400"
-                                >
-                                    {CONTACT.phoneNo}
-                                </a>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <span className="h-2.5 w-2.5 rounded-full bg-purple-400" />
+                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/15 text-blue-400">
+                                    <MapPin className="h-4 w-4" />
+                                </div>
                                 <p className="text-neutral-200">{CONTACT.address}</p>
                             </div>
                         </div>
