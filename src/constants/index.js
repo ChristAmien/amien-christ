@@ -1,5 +1,5 @@
 import project1 from "../assets/projects/image.png";
-import project2 from "../assets/projects/project-2.jpg";
+import project2 from "../assets/projects/EduScan.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/Coffee.png"
 import project6 from "../assets/projects/project-6.jpg"
@@ -45,13 +45,13 @@ export const PROJECTS = [
         sourceUrl: "https://github.com/ChristAmien/Dinevoria",
     },
     {
-        title: "TaskFlow",
+        title: "EduScan",
         image: project2,
         description:
-            "Application de gestion de tâches conçue pour organiser le travail en équipe, suivre l'avancement des projets et centraliser les actions de manière claire, rapide et intuitive.",
-        technologies: ["HTML", "CSS", "Angular", "Firebase"],
-        demoUrl: "#",
-        sourceUrl: "#",
+            "EduScan est une application mobile de gestion scolaire permettant d’identifier rapidement les étudiants grâce à un QR Code et de consulter leur statut de paiement et leur solde scolaire",
+        technologies: ["Flutter", "Supabase"],
+        demoUrl: "https://christamien.github.io/EduScan/#/login",
+        sourceUrl: "https://github.com/ChristAmien/EduScan",
     },
     {
         title: "SkillPath",
