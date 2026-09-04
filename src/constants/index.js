@@ -3,6 +3,7 @@ import project2 from "../assets/projects/EduScan.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/Coffee.png"
 import project6 from "../assets/projects/project-6.jpg"
+import project7 from "../assets/projects/obvx.png"
 import { color } from "framer-motion";
 
 export const HERO_CONTENT = `Développeur Full Stack passionné par la conception d’applications web modernes et performantes. Je travaille principalement avec Java, Spring Boot, React et JavaScript, avec un intérêt particulier pour le développement backend, les API REST et les solutions digitales dans le secteur bancaire.`;
@@ -61,6 +62,15 @@ export const PROJECTS = [
         technologies: ["REACT", "TAILWINDCSS"],
         demoUrl: "https://skillpath-lac-eta.vercel.app/",
         sourceUrl: "https://github.com/ChristAmien/Skillpath",
+    },
+    {
+        title: "OBVX",
+        image: project7,
+        description:
+            "OBVX est une plateforme e-commerce dédiée à la vente de vêtements streetwear. Elle propose une interface moderne et immersive, facilitant la découverte des produits, la navigation par collection et le parcours d’achat sur ordinateur comme sur mobile.",
+        technologies: ["REACT", "TAILWINDCSS"],
+        demoUrl: "",
+        sourceUrl: "",
     },
     {
         title: "Am'Coffee",
