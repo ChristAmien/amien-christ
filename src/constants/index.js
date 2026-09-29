@@ -31,7 +31,7 @@ export const EXPERIENCES = [
         role: "Développeur Web",
         company: "OBVX",
         description: `Création et administration de bases de données. Conception de l'interface utilisateur en collaboration avec l'équipe Frontend.`,
-        technologies: ["Web", "Base de données", "UI"],
+        technologies: ["Web", "Base de données", "UI", "JAVA", "SPRINGBOOT", "REACT", "TAILWINDCSS"],
     },
 ];
 
