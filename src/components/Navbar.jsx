@@ -9,7 +9,7 @@ import { NAV_LINKS } from '../constants';
 
 
 // Chemin du CV 
-const CV_PATH = '/documents/CV-Christ-Amien.pdf'
+const CV_PATH = '/documents/CHRIST AMIEN.pdf'
 
 export function Navbar() {
     const [open, setOpen] = useState(false)

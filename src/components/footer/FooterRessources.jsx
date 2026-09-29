@@ -20,7 +20,7 @@ const FolderPaper = ({ href, children }) => (
 export const FooterResources = ({ socialLinks, email }) => {
     const github = socialLinks.find((s) => s.icon === "FaGithub");
     const linkedin = socialLinks.find((s) => s.icon === "FaLinkedin");
-    const cvPath = "/documents/CV-Christ-Amien.pdf";
+    const cvPath = "/documents/CHRIST AMIEN.pdf";
 
     return (
         <motion.div variants={itemVariants} className="flex flex-col items-start gap-3 lg:items-center">

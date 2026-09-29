@@ -23,8 +23,8 @@ export const EXPERIENCES = [
         year: "2026",
         role: "Développeur",
         company: "OIJD-CIV",
-        description: `Développeur travaillant sur la création et la maintenance du site web de l'OIJD, veillant à la sécurité et la gestion du site web et à protection des données utilisateurs `,
-        technologies: ["Java", "Spring Boot", "TAILWINDCSS","REACT"],
+        description: `Développeur travaillant sur la maintenance de site web de l'OIJD, veillant à la sécurité du site web et à la fiabilité`,
+        technologies: ["Java", "Spring Boot", "TAILWINDCSS", "REACT"],
     },
     {
         year: "2025 - 2026",
@@ -203,15 +203,15 @@ export const FOOTER_CONTENT = {
         Company: [
             { label: "Nous contacter", href: "#contact" },
             { label: "GitHub", href: "https://github.com/ChristAmien" },
-            { label: "LinkedIn", href: "https://linkedin.com/in/amien-christ" },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/amien-christ-143801367" },
             { label: "Mentions légales", href: "#" },
         ],
     },
     
     socialLinks: [
         {
-            icon: "FaTwitter",
-            href: "https://twitter.com/amien_dev",
+            icon: "FaXTwitter",
+            href: "https://x.com/christ_amien",
             label: "Twitter",
         },
         {
@@ -221,7 +221,7 @@ export const FOOTER_CONTENT = {
         },
         {
             icon: "FaLinkedin",
-            href: "https://linkedin.com/in/amien-christ",
+            href: "https://www.linkedin.com/in/amien-christ-143801367",
             label: "LinkedIn",
         },
         {
