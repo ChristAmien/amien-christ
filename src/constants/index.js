@@ -18,13 +18,13 @@ export const EXPERIENCES = [
         description: `Simulation des opérations bancaires (comptes, clients, transactions) en Java. Développement d'une API REST avec Spring Boot incluant CRUD et gestion des avis utilisateurs, connectée à une base de données. Tests des requêtes API avec Postman.`,
         technologies: ["Java", "Spring Boot", "REST API", "Postman"],
     },
-    /*{
+    {
         year: "2026",
         role: "Développeur",
         company: "OIJD-CIV",
-        description: `Développeur travaillant sur la maintenance de site web de l'OIJD, veillant à la sécurité du site web et à la fiabilité`,
-        technologies: ["Java", "Spring Boot", "TYPESCRIPT", "TAILWINDCSS"],
-    },*/
+        description: `Développeur travaillant sur la création et la maintenance du site web de l'OIJD, veillant à la sécurité et la gestion du site web et à protection des données utilisateurs `,
+        technologies: ["Java", "Spring Boot", "TAILWINDCSS","REACT"],
+    },
     {
         year: "2025 - 2026",
         role: "Développeur Web",
@@ -77,8 +77,8 @@ export const PROJECTS = [
         description:
             "Portfolio personnel conçu pour présenter mes compétences, mes réalisations et mon approche de développement avec une esthétique minimaliste, une navigation immersive et un rendu premium.",
         technologies: ["REACT", "TAILWINDCSS", "JAVASCRIPT", "FRAMER"],
-        demoUrl: "https://portfolio-amien-christ.vercel.app/",
-        sourceUrl: "https://github.com/ChristAmien/Portfolio-Amien-Christ",
+        demoUrl: "https://christ-amien.vercel.app/",
+        sourceUrl: "https://github.com/ChristAmien/amien-Christ",
     },
 
 ];
@@ -234,6 +234,8 @@ export const technologies = [
     { name: "Spring Boot", icon: `${DEVICON_BASE}/spring/spring-original.svg` },
     { name: "MySQL", icon: `${DEVICON_BASE}/mysql/mysql-original.svg` },
     { name: "PostgreSQL", icon: `${DEVICON_BASE}/postgresql/postgresql-original.svg` },
+    { name: "Postman", icon: `${DEVICON_BASE}/postman/postman-original.svg` },
+    { name: "UML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" },
     { name: "Git", icon: `${DEVICON_BASE}/git/git-original.svg` },
     { name: "GitHub", icon: `${DEVICON_BASE}/github/github-original.svg`, badge: "bg-white" },
     { name: "Tailwind CSS", icon: `${DEVICON_BASE}/tailwindcss/tailwindcss-original.svg` },
